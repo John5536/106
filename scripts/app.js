@@ -1,10 +1,10 @@
-function sayGoodbye(){
-    console.log("Goodbye")
+function saveTask(){
+    console.log("saving task");
+}
+function init(){
+
+    $("#btnSave").click(saveTask);
+
 }
 
-function sayHello(){
-    console.log("hello");
-    sayGoodbye();
-}
-
-window.onload = sayHello;
+window.onload = init;
